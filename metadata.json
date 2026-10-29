@@ -1,0 +1,20 @@
+{
+    "schema_version": 2,
+    "name": "RTG Power Tweaker",
+    "mod_id": "RTGPowerTweaker",
+    "author": "NirvanicDeer",
+    "description": "This mod allows you to configure the RTG and QT-RTG power output values. It uses features exclusive to AstroModLoader-Classic/AstroModIntegrator and might not work with other loaders.",
+    "version": "1.2.0",
+    "sync": "serverclient",
+    "integrator": {
+        "path_to_mod_config": "/Game/Mods/Nirvanic/RTGPowerTweaker/TweakerConfigMenu",
+        "linked_actor_components": {
+            "/Game/Components_Small/RTG_T1_BP": [
+                "/Game/Mods/Nirvanic/RTGPowerTweaker/SmallRTGPowerApplier"
+            ],
+            "/Game/Components_Medium/RTG_Base": [
+                "/Game/Mods/Nirvanic/RTGPowerTweaker/MediumRTGPowerApplier"
+            ]
+        }
+    }
+}
